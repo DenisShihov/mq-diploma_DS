@@ -1,12 +1,12 @@
 @font-face {
   font-family: "OpenSans";
-  src: url("/fonts/OpenSans-Regular.woff"), url("/fonts/OpenSans-Regular.ttf"), url("/fonts/OpenSans-Regular.woff2");
+  src: url("../fonts/OpenSans-Regular.woff"), url("../fonts/OpenSans-Regular.ttf"), url("../fonts/OpenSans-Regular.woff2");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "OpenSans";
-  src: url("/fonts/OpenSans-Bold.woff"), url("/fonts/OpenSans-Bold.woff"), url("/fonts/OpenSans-Bold.woff2");
+  src: url("../fonts/OpenSans-Bold.woff"), url("../fonts/OpenSans-Bold.woff"), url("../fonts/OpenSans-Bold.woff2");
   font-weight: 700;
 }
 
@@ -22,7 +22,7 @@
 
 .header {
   position: relative;
-  background-image: url("//images/banner-bg.jpg");
+  background-image: url("../images/banner-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 145px;
