@@ -155,17 +155,17 @@
 }
 
 .trend_first {
-  background-image: url("/images/trend1.jpg");
+  background-image: url("../images/trend1.jpg");
   background-size: cover;
 }
 
 .trend_second {
-  background-image: url("/images/trend2.jpg");
+  background-image: url("images/trend2.jpg");
   background-size: cover;
 }
 
 .trend_third {
-  background-image: url("/images/trend3.jpg");
+  background-image: url(../images/trend3.jpg);
   background-size: cover;
 }
 
