@@ -22,7 +22,7 @@
 
 .header {
   position: relative;
-  background-image: url("/images/banner-bg.jpg");
+  background-image: url("../images/banner-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 145px;
@@ -160,17 +160,17 @@
 }
 
 .trend_second {
-  background-image: url("images/trend2.jpg");
+  background-image: url("../images/trend2.jpg");
   background-size: cover;
 }
 
 .trend_third {
-  background-image: url(../images/trend3.jpg);
+  background-image: url("../images/trend3.jpg");
   background-size: cover;
 }
 
 .trend_fourth {
-  background-image: url("/images/trend4.jpg");
+  background-image: url("../images/trend4.jpg");
   background-size: cover;
 }
 
@@ -337,7 +337,7 @@
   height: 48px;
   background: #ae9e5f;
   outline: none;
-  background-image: url("/images/search.svg");
+  background-image: url("../images/search.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px 18px;
@@ -461,15 +461,15 @@
 }
 
 .item_img-first {
-  background-image: url("/images/shop-item-desk1.jpg");
+  background-image: url("../images/shop-item-desk1.jpg");
 } 
 
 .item_img-second {
-  background-image: url("/images/shop-item-desk2.jpg");
+  background-image: url("../images/shop-item-desk2.jpg");
 } 
 
 .item_img-third {
-  background-image: url("/images/shop-item-desk3.jpg");
+  background-image: url("../images/shop-item-desk3.jpg");
 } 
 
 .item_info {
@@ -495,6 +495,7 @@
 .card_text {
   font-size: 14px;
   margin-bottom: 24px;
+  line-height: 22px;
 }
 
 .text_link {
@@ -509,7 +510,7 @@
 .price {
   font-size: 20px;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 18px;
 }
 
 .strike {
@@ -562,16 +563,16 @@
 }
 
 .icon_dribbble {
-  background-image: url("/images/001-dribbble.svg");
+  background-image: url("../images/001-dribbble.svg");
 }
 
 .icon_pinterest {
-  background-image: url("/images/002-pinterest.svg");
+  background-image: url("../images/002-pinterest.svg");
   margin: 0 30px;
 }
 
 .icon_tumblr {
-  background-image: url("/images/003-tumblr.svg");
+  background-image: url("../images/003-tumblr.svg");
 }
 
 .copyright {
