@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Блог о творчестве, спорте и образе жизни</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="css/style_desktop.css">
+    <link rel="stylesheet" media="screen and (min-width: 641px) and (max-width: 1199px)" href="css/style_tablet.css">
 </head>
 <body>
     <header class="header">
@@ -37,6 +38,15 @@
                 </li>
               </ul>
             </nav>
+            <button class="burger" aria-label="burger">
+              <svg width="30px" height="30px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" id="Слой_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g>
+                <rect fill="#ffffff" height="1.2" width="11" x="0.5" y="5.5"/>
+                <rect fill="#ffffff" height="1.2" width="11" x="0.5" y="1.5"/>
+                <rect fill="#ffffff" height="1.2" width="11" x="0.5" y="9.5"/>
+                </g>
+              </svg>
+            </button>
           </div>
           <h1 class="title">Блог о творчестве, спорте, и образе жизни</h1>
         </div>
@@ -99,7 +109,7 @@
                   </li>
                 </ul>
                 <h2 class="trend_card-title">
-                  <a href="#" class="trend_title-link">сейчас в тренде: сколько витамина с в лимонах?</a>
+                  <a href="#" class="trend_title-link">сейчас в тренде: сколько<br> витамина с в лимонах?</a>
                 </h2>
               </div>
             </div>
@@ -220,49 +230,6 @@
                     </div>
                 </article>
 
-                <article class="card">
-                    <div class="card_img">
-                      <img src="images/last-post6.jpg" alt="Изображение" class="image">
-                    </div>
-                    <div class="card_content">
-                      <ul class="card_list">
-                        <li class="card_item">
-                          <a href="#0" class="tag_link">travel</a>
-                        </li>
-                        <li class="card_item">
-                          <a href="#0" class="tag_link">lifestyle</a>
-                        </li>
-                      </ul>
-                      <h2 class="card_title">
-                        <a href="#0" class="card_title_link">Как первый раз отправиться в горы?</a>
-                      </h2>
-                      <time class="card_date">10 июня 2019</time>
-                      <span class="author">Неизвестный автор</span>
-                      <p class="text">Для начала нужно определиться, в каком формате пройдёт ваше путешествие. Это зависит от многих факторов, не только от ваших желаний и интересов.</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div class="card_img">
-                      <img src="images/last-post4.jpg" alt="Изображение" class="image">
-                    </div>
-                    <div class="card_content">
-                      <ul class="card_list">
-                        <li class="card_item">
-                          <a href="#0" class="tag_link">lifestyle</a>
-                        </li>
-                        <li class="card_item">
-                          <a href="#0" class="tag_link">food</a>
-                        </li>
-                      </ul>
-                      <h2 class="card_title">
-                        <a href="#0" class="card_title_link">Наукоёмкий подход к кулинарии</a>
-                      </h2>
-                      <time class="card_date">10 июня 2019</time>
-                      <span class="author">Неизвестный автор</span>
-                      <p class="text">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
-                    </div>
-                </article>
             </div>
         
             <aside class="aside_news">
@@ -489,5 +456,38 @@
           <a href="" class="copyright_link">Copyright © 2009-2019 City Blog LLC </a>
         </div>
       </footer>
+
+      <div class="popup visually-hidden">
+        <div class="popup_wrp">
+          <div class="popup_form">
+            <h2 class="popup_title">ваш фидбек</h2>
+            <p class="popup_text">Как часто вы заходите на сайт?</p>
+            <select name="select" class="items">
+              <option class="popup_item">Почти каждый день</option>
+              <option class="popup_item">Раз в несколько дней</option>
+              <option class="popup_item">Раз в несколько недель</option>
+              <option class="popup_item">Несколько раз в год</option>
+            </select>
+  
+            <fieldset class="popup_subscribe">
+              <legend class="popup_legend">Вы подписаны на e-mail рассылку?</legend>
+              <input type="radio" name="answer" id="yes" class="answer">
+              <label for="yes" class="answer_label">Да</label>
+              <input type="radio" name="answer" id="no" class="answer">
+              <label for="no" class="answer_label">Нет</label>
+            </fieldset>
+  
+            <form action="#" class="feedback">
+              <label for="feedback_input" class="feedback_label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+              <textarea class="feedback_text">Может, больше рецептов?</textarea>
+            </form>
+  
+            <button type="submit" class="popup_btn">Отправить</button>
+  
+  
+          </div>
+        </div>
+  
+      </div>
 </body>
 </html>
