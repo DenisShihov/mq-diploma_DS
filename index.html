@@ -9,8 +9,44 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="popup visually-hidden">
+    <div class="popup_wrp">
+      <div class="popup_form">
+        <h2 class="popup_title">ваш фидбек</h2>
+        <p class="popup_text">Как часто вы заходите на сайт?</p>
+        <select name="select" class="items">
+          <option class="popup_item">Почти каждый день</option>
+          <option class="popup_item">Раз в несколько дней</option>
+          <option class="popup_item">Раз в несколько недель</option>
+          <option class="popup_item">Несколько раз в год</option>
+        </select>
+        <fieldset class="popup_subscribe">
+          <legend class="popup_legend">Вы подписаны на e-mail рассылку?</legend>
+          <input type="radio" name="answer" id="yes" class="answer">
+          <label for="yes" class="answer_label">Да</label>
+          <input type="radio" name="answer" id="no" class="answer">
+          <label for="no" class="answer_label">Нет</label>
+        </fieldset>
+        <form action="#" class="feedback">
+          <label for="feedback_input" class="feedback_label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+          <textarea class="feedback_text">Может, больше рецептов?</textarea>
+        </form>
+        <button type="submit" class="popup_btn">Отправить</button>
+      </div>
+    </div>
+  </div>
+
     <header class="header">
         <div class="container">
+          <button class="burger" aria-label="burger">
+            <svg width="30px" height="30px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" id="Слой_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g>
+              <rect fill="#ffffff" height="1.2" width="11" x="0.5" y="5.5"/>
+              <rect fill="#ffffff" height="1.2" width="11" x="0.5" y="1.5"/>
+              <rect fill="#ffffff" height="1.2" width="11" x="0.5" y="9.5"/>
+              </g>
+            </svg>
+          </button>
           <div class="top">
             <a href="#0" class="logo_link">
               <img src="images/noemi-logo.svg" alt="Логотип" class="logo_img">
@@ -37,16 +73,8 @@
                 </li>
               </ul>
             </nav>
-            <button class="burger" aria-label="burger">
-              <svg width="30px" height="30px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" id="Слой_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g>
-                <rect fill="#ffffff" height="1.2" width="11" x="0.5" y="5.5"/>
-                <rect fill="#ffffff" height="1.2" width="11" x="0.5" y="1.5"/>
-                <rect fill="#ffffff" height="1.2" width="11" x="0.5" y="9.5"/>
-                </g>
-              </svg>
-            </button>
           </div>
+          
           <h1 class="title">Блог о творчестве, спорте, и образе жизни</h1>
         </div>
       </header>
@@ -455,38 +483,5 @@
           <a href="" class="copyright_link">Copyright © 2009-2019 City Blog LLC </a>
         </div>
       </footer>
-
-      <div class="popup visually-hidden">
-        <div class="popup_wrp">
-          <div class="popup_form">
-            <h2 class="popup_title">ваш фидбек</h2>
-            <p class="popup_text">Как часто вы заходите на сайт?</p>
-            <select name="select" class="items">
-              <option class="popup_item">Почти каждый день</option>
-              <option class="popup_item">Раз в несколько дней</option>
-              <option class="popup_item">Раз в несколько недель</option>
-              <option class="popup_item">Несколько раз в год</option>
-            </select>
-  
-            <fieldset class="popup_subscribe">
-              <legend class="popup_legend">Вы подписаны на e-mail рассылку?</legend>
-              <input type="radio" name="answer" id="yes" class="answer">
-              <label for="yes" class="answer_label">Да</label>
-              <input type="radio" name="answer" id="no" class="answer">
-              <label for="no" class="answer_label">Нет</label>
-            </fieldset>
-  
-            <form action="#" class="feedback">
-              <label for="feedback_input" class="feedback_label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
-              <textarea class="feedback_text">Может, больше рецептов?</textarea>
-            </form>
-  
-            <button type="submit" class="popup_btn">Отправить</button>
-  
-  
-          </div>
-        </div>
-  
-      </div>
 </body>
 </html>
