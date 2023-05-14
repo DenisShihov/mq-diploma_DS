@@ -465,13 +465,15 @@ input[type="search"] {
 }
 
 .search {
+  width: 100%;
   display: flex;
   margin-top: 60px;
 }
 
 .text_search {
   border: none;
-  width: 223px;
+  max-width: 223px;
+  flex-grow: 1;
   background: #f5f7f6;
   padding-left: 20px;
   padding-right: 20px;
@@ -1038,7 +1040,7 @@ input[type="search"] {
   }
   
   .aside_news {
-    max-width: 329px;
+    width: 329px;
     padding: 0;
   }
 
@@ -1051,7 +1053,7 @@ input[type="search"] {
   }
 
   .text_search {
-    width: 239px;
+    max-width: 100%;
   }
 
   .subscribe {
