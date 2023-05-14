@@ -463,6 +463,7 @@
 .search {
   display: flex;
   margin-top: 60px;
+  -webkit-appearance: none;
 }
 
 .text_search {
@@ -918,12 +919,12 @@
     margin-right: 0;
     margin-bottom: 5px;
   }
-}
-  
+  }
+ 
 }
 
 
-@media (max-width: 640px) {
+@media (max-width: 640px) or (max-height: 640px) {
   .header {
     background-image: url("../images/banner-mobile.jpg");
     background-repeat: no-repeat;
@@ -932,7 +933,7 @@
   }
 
   .container {
-    width: 329px;
+    max-width: 329px;
     padding: 0;
   }
 
@@ -1021,7 +1022,7 @@
     content: "";
     display: block;
     background: #eeeeee;
-    width: 391px;
+    max-width: 391px;
     height: 3px;
     margin-top: 22px;
   }
@@ -1050,7 +1051,7 @@
   }
   
   .aside_news {
-    width: 329px;
+    max-width: 329px;
     padding: 0;
   }
 
@@ -1059,11 +1060,11 @@
   }
 
   .search {
-    width: 329px;
+    width: 100%;
   }
 
   .text_search {
-    width: 281px;
+    width: 239px;
   }
 
   .subscribe {
@@ -1094,7 +1095,7 @@
   }
 
   .shop_item {
-    width: 329px;
+    max-width: 329px;
     margin: 0 auto 26px;
   }
 
@@ -1103,7 +1104,7 @@
   }
 
   .footer {
-    width: 329px;
+    max-width: 329px;
     padding: 0;
   }
 
@@ -1111,15 +1112,16 @@
     margin: 49px auto 46px;
   }
 
-  @media (max-width: 640px) and (orientation: landscape) {
+  @media (orientation: landscape) {
     .trend_card {
     width: calc((100% - 5px) / 2);
     margin-right: 0;
     margin-bottom: 5px;
     }
-
+  
     .trend_card:nth-child(odd) {
     margin-right: 5px;
     } 
   }
+
 }
