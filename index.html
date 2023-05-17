@@ -11,7 +11,7 @@
   <body>
     <div class="popup visually-hidden">
       <div class="popup_wrp">
-        <div class="popup_form">
+        <form class="popup_form">
           <h2 class="popup_title">ваш фидбек</h2>
           <p class="popup_text">Как часто вы заходите на сайт?</p>
           <select name="select" class="items">
@@ -24,17 +24,28 @@
             <legend class="popup_legend">
               Вы подписаны на e-mail рассылку?
             </legend>
-            <input type="radio" name="answer" id="yes" class="answer"/>
-            <label for="yes" class="answer_label">Да</label>
-            <input type="radio" name="answer" id="no" class="answer"/>
-            <label for="no" class="answer_label">Нет</label>
+            <label class="radio_btn">
+              <input type="radio" name="answer" id="yes" class="real_radio"/>
+              <span class="custom_radio"></span>
+              Да
+            </label>
+            <label class="radio_btn">
+              <input type="radio" name="answer" id="yes" class="real_radio"/>
+              <span class="custom_radio"></span>
+              Нет
+            </label>
           </fieldset>
-          <form action="#" class="feedback">
+          <div class="feedback">
             <label for="feedback_input" class="feedback_label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
             <textarea class="feedback_text">Может, больше рецептов?</textarea>
-          </form>
+          </div>
           <button type="submit" class="popup_btn">Отправить</button>
-        </div>
+        </form>
+        <picture class="close">
+          <svg fill="#ffffff" width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 14.545L1.455 16 8 9.455 14.545 16 16 14.545 9.455 8 16 1.455 14.545 0 8 6.545 1.455 0 0 1.455 6.545 8z" fill-rule="evenodd"/>
+          </svg>
+        </picture>
       </div>
     </div>
 
@@ -106,8 +117,7 @@
               </ul>
               <h2 class="trend_card-title">
                 <a href="#" class="trend_title-link">
-                  сейчас в тренде: сад<br/>
-                  на подоконнике</a>
+                  сейчас в тренде: сад на подоконнике</a>
               </h2>
             </div>
           </div>
@@ -121,9 +131,7 @@
               </ul>
               <h2 class="trend_card-title">
                 <a href="#" class="trend_title-link">
-                  сыры на красивых<br/>
-                  картинках из интернета:<br/>
-                  какие они на вкус?
+                  сыры на красивых картинках из интернета: какие они на вкус?
                 </a>
               </h2>
             </div>
@@ -141,8 +149,7 @@
               </ul>
               <h2 class="trend_card-title">
                 <a href="#" class="trend_title-link">
-                  собираемся в первый<br/>
-                  поход в горы
+                  собираемся в первый поход в горы
                 </a>
               </h2>
             </div>
@@ -160,8 +167,7 @@
               </ul>
               <h2 class="trend_card-title">
                 <a href="#" class="trend_title-link">
-                  сейчас в тренде: сколько<br/>
-                  витамина с в лимонах?
+                  сейчас в тренде: сколько витамина с в лимонах?
                 </a>
               </h2>
             </div>
@@ -510,7 +516,7 @@
         <h2 class="section_title big_title">наши изделия</h2>
         <div class="shop_items">
           <article class="shop_item">
-            <div class="item_img item_img-first"></div>
+            <picture class="item_img item_img-first"></picture>
             <div class="item_info">
               <h2 class="item_title">подушка на диван</h2>
               <div class="card_text">
@@ -521,15 +527,13 @@
                 <div class="price">
                   <span class="strike">1000 ₽</span><br/>800 ₽
                 </div>
-                <button class="card_btn">
-                  <a href="#" class="btn_link">в магазин</a>
-                </button>
+                <a href="#" class="card_btn">в магазин</a>
               </div>
             </div>
           </article>
 
           <article class="shop_item">
-            <div class="item_img item_img-second"></div>
+            <picture class="item_img item_img-second"></picture>
             <div class="item_info">
               <h2 class="item_title">кукла «зайчик»</h2>
               <div class="card_text">
@@ -543,15 +547,13 @@
                   <br/>
                   3500 ₽
                 </div>
-                <button class="card_btn">
-                  <a href="#" class="btn_link">в магазин</a>
-                </button>
+                <a href="#" class="card_btn">в магазин</a>
               </div>
             </div>
           </article>
 
           <article class="shop_item">
-            <div class="item_img item_img-third"></div>
+            <picture class="item_img item_img-third"></picture>
             <div class="item_info">
               <h2 class="item_title">шестиугольная рамка</h2>
               <div class="card_text">
@@ -565,9 +567,7 @@
                 <div class="price">
                   <span class="strike">500 ₽</span><br/>400 ₽
                 </div>
-                <button class="card_btn">
-                  <a href="#" class="btn_link">в магазин</a>
-                </button>
+                <a href="#" class="card_btn">в магазин</a>
               </div>
             </div>
           </article>
